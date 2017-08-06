@@ -23,7 +23,7 @@ class Home extends Component {
     
 }
 const mapStateToProps = (state) => {
-	console.log(state.redVisibility)
+	console.log(state)
     return{
         redVisibility: state.redVisibility,
         greenVisibility: state.greenVisibility,
