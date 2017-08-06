@@ -1,0 +1,42 @@
+.red{
+            background: red;
+            width: 100px;
+            height: 50px;
+            float:left
+        }
+        .green{
+            background: green;
+            width: 100px;
+            height: 50px;
+            float:left
+        }
+        .blue{
+            background: blue;
+            width: 100px;
+            height: 50px;
+            float:left
+        }
+        .subred{
+            margin-top: 30px;
+            clear: both;
+            background: red;
+            width: 100px;
+            height: 200px;
+            float:left
+        }
+        .subgreen{
+            clear: both;
+            margin-top: 30px;
+            background: green;
+            width: 100px;
+            height: 200px;
+            float:left
+        }
+        .subblue{
+            clear: both;
+            margin-top: 30px;
+            background: blue;
+            width: 100px;
+            height: 200px;
+            float:left
+        }
