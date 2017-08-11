@@ -1,8 +1,10 @@
 import React, {Component} from "react";
 import {connect} from "react-redux"
-import {redVisibilityAction, greenVisibilityAction,blueVisibilityAction} from "./actions/action"
+import {redVisibilityAction, greenVisibilityAction,blueVisibilityAction} from "./actions/action";
+import {reduxFrom,Field} from 'redux-form';
+import FacebookLogin from 'react-facebook-login'
+
 class Home extends Component {
-	console.log('adasdasd')
     constructor(props){
         super(props)
     }
@@ -15,12 +17,19 @@ class Home extends Component {
                 {this.props.redVisibility && <div className="subred" ></div>}
                 {this.props.greenVisibility && <div className="subgreen"></div>}
                 {this.props.blueVisibility && <div className="subblue"></div>}
+ <FacebookLogin
+        appId="1088597931155576"
+        autoLoad={true}
+        fields="name,email,picture"
+        callback={this.responseFacebook}
+      />
+                <div className="form">
+                    <Field component="input" type="text"/>
+                </div>
             </div>
         )
-    }
 
-
-    
+    }    
 }
 const mapStateToProps = (state) => {
 	console.log(state)
